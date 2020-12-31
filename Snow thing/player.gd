@@ -31,6 +31,7 @@ func _physics_process(delta):
 	
 	if Input.is_action_pressed("Input_dash"):
 		if Can_dash == true:
+			$AnimatedSprite.play("dash")
 			dash()
 	elif Input.is_action_pressed("Input_right"):
 		motion.x = min(motion.x+ACCEL, Max_speed)
@@ -74,24 +75,6 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("Input_space"):
 			motion.x = Direction * -300
 			motion.y = -550
-	
-	#Adds groudpound and float
-	#Float
-	if is_on_floor() == false && is_on_wall() == false:
-		if Input.is_action_pressed("Input_float"):
-			Gravity = 15
-		#Ground pound
-		if Input.is_action_pressed("Input_ground"):
-			Gravity = 35
-	else:
-		Gravity = 20
-	
-	if Input.is_action_pressed("Input_float") && Input.is_action_pressed("Input_ground"):
-		Gravity = 20
-	
-	#Reset Gravity
-	if is_on_floor():
-		Gravity = 20
 	
 	if Input.is_action_pressed("Input_dash"):
 		if Button_timer > $"Dash Timer".wait_time:
