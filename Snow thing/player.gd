@@ -108,4 +108,3 @@ func _on_Timer_timeout(): #Dash timer
 
 func _on_Delay_timer_timeout():
 	Can_dash = true
-	#please work
