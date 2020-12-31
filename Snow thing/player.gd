@@ -79,7 +79,7 @@ func _physics_process(delta):
 	#Float
 	if is_on_floor() == false && is_on_wall() == false:
 		if Input.is_action_pressed("Input_float"):
-			Gravity = 10
+			Gravity = 15
 		#Ground pound
 		if Input.is_action_pressed("Input_ground"):
 			Gravity = 35
