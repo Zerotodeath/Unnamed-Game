@@ -53,7 +53,7 @@ func _physics_process(delta):
 		JumpTaken = false
 	#allow jumps and takes jumps away
 	if JumpCount > 0:
-		if Input.is_action_just_pressed("Input_up"):
+		if Input.is_action_just_pressed("Input_space"):
 			motion.y = -JumpHeight
 			JumpCount -= 1
 	if not is_on_floor():
