@@ -176,6 +176,18 @@ texture = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/StaticBody2D19"]
 shape = SubResource( 1 )
 
+[node name="StaticBody2D21" type="StaticBody2D" parent="Node"]
+position = Vector2( 448, -352 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Node/StaticBody2D21"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node/StaticBody2D21"]
+shape = SubResource( 1 )
+
 [node name="StaticBody2D20" type="StaticBody2D" parent="Node"]
 position = Vector2( 320, -352 )
 __meta__ = {
