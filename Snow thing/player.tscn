@@ -39,9 +39,9 @@ animations = [ {
 "name": "dash",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ) ],
+"frames": [ ExtResource( 4 ) ],
 "loop": true,
-"name": "turn R",
+"name": "turn L",
 "speed": 5.0
 }, {
 "frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ) ],
@@ -49,9 +49,9 @@ animations = [ {
 "name": "run",
 "speed": 12.0
 }, {
-"frames": [ ExtResource( 4 ) ],
+"frames": [ ExtResource( 5 ) ],
 "loop": true,
-"name": "turn L",
+"name": "turn R",
 "speed": 5.0
 } ]
 
