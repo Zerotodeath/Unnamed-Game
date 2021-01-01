@@ -10,7 +10,7 @@ var JumpHeight = 350
 var JumpCount = 2
 var Direction = 1
 var Gravity = 20
-var Button_timer = 1
+var Button_timer = 0
 var Can_dash = true
 var JumpTaken = false
 
