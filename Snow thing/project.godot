@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Snow thing"
+config/name="Unnsmed prototype"
 run/main_scene="res://Practice_Scene.tscn"
 config/icon="res://icon.png"
 
