@@ -55,9 +55,6 @@ func _physics_process(delta):
 			motion.y = -JumpHeight
 			JumpCount -= 1
 	
-	if not is_on_wall():
-		JumpCount = JumpCount
-	
 	motion = move_and_slide(motion, UP)
 	#Set wall climb
 	if is_on_wall():
