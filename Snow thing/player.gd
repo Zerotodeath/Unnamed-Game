@@ -5,7 +5,6 @@ const ACCEL = 50
 const DASH_SPEED = 950
 
 var Max_speed = 450
-
 var JumpHeight = 350
 var JumpCount = 2
 var Direction = 1
@@ -47,6 +46,7 @@ func _physics_process(delta):
 		$AnimatedSprite.play("default")
 	
 	#Resets jumps
+	
 	if is_on_floor():
 		JumpCount = 2
 	#allow jumps and takes jumps away
@@ -92,6 +92,7 @@ func _physics_process(delta):
 	print(JumpTaken, JumpCount)
 	
 	motion = move_and_slide(motion, UP)
+	
 
 func dash():
 	Can_dash = false
@@ -104,4 +105,3 @@ func _on_Timer_timeout(): #Dash timer
 
 func _on_Delay_timer_timeout():
 	Can_dash = true
-#can i pull this
