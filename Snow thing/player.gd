@@ -17,8 +17,7 @@ var JumpTaken = false
 var motion = Vector2()
 
 func _physics_process(delta):
-	if JumpTaken == true:
-		JumpCount + 1
+	
 	
 	if not Input.is_action_pressed("Input_dash"):
 		Button_timer = 0
@@ -49,15 +48,15 @@ func _physics_process(delta):
 	
 	#Resets jumps
 	if is_on_floor():
-		JumpCount = 3
-		JumpTaken = false
+		JumpCount = 2
 	#allow jumps and takes jumps away
 	if JumpCount > 0:
 		if Input.is_action_just_pressed("Input_space"):
 			motion.y = -JumpHeight
 			JumpCount -= 1
-	if not is_on_floor():
-		JumpTaken = true
+	
+	if not is_on_wall():
+		JumpCount = JumpCount
 	
 	motion = move_and_slide(motion, UP)
 	#Set wall climb
