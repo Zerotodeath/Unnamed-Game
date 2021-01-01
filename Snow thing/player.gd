@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 const UP = Vector2(0, -1)
 const ACCEL = 50
-const DASH_SPEED = 950
+const DASH_SPEED = 850
 
 var Max_speed = 450
 
