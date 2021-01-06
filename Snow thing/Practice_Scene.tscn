@@ -21,7 +21,7 @@ collision_layer = 0
 [node name="Node" type="Node" parent="."]
 
 [node name="StaticBody2D6" type="StaticBody2D" parent="Node"]
-position = Vector2( 1312, 320 )
+position = Vector2( 1312, 384 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -69,7 +69,7 @@ texture = ExtResource( 2 )
 shape = SubResource( 1 )
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="Node"]
-position = Vector2( 1248, 320 )
+position = Vector2( 1248, 456 )
 __meta__ = {
 "_edit_group_": true
 }
